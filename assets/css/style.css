@@ -1,0 +1,61 @@
+body {
+  font-family: system-ui;
+}
+
+.navbar {
+  padding: 18px 0;
+}
+
+.hero {
+  background: linear-gradient(135deg, #0d6efd, #0a58ca);
+  color: white;
+  padding: 120px 0;
+}
+
+.hero h1 {
+  font-size: 44px;
+  font-weight: 700;
+}
+
+.avatar {
+  max-width: 200px;
+}
+
+.section {
+  padding: 90px 0;
+}
+
+.card-service {
+  border: none;
+  border-radius: 14px;
+  transition: 0.3s;
+}
+
+.card-service:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+.icon {
+  font-size: 38px;
+  color: #0d6efd;
+  margin-bottom: 15px;
+}
+
+.cta {
+  background: #f8f9fa;
+  padding: 70px 0;
+}
+
+footer {
+  background: #111;
+  color: white;
+  padding: 30px;
+}
+
+.whatsapp {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 999;
+}
