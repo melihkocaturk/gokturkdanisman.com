@@ -1,0 +1,29 @@
+# Site
+url: "https://www.gokturkdanisman.com"
+lang: tr
+name: "Melih Kocatürk"
+title: "Göktürk Gayrimenkul Danışmanı"
+description: "Göktürk'te gayrimenkul satışı, kiralama, satın alma ve yatırım süreçlerinde; ihtiyaçlarınıza uygun strateji ve profesyonel danışmanlıkla yanınızdayım."
+copyright: '<a href="https://www.melihkocaturk.com">Melih Kocatürk</a>'
+words_per_minute: 190
+
+# Permalinks
+permalink: /:title
+
+# Pagination
+paginate: 3
+paginate_path: /sayfa:num/
+
+# Google Analytics
+google_analytics: G-829CV0XLR6
+
+# Contact
+contact:
+  gsm: +90 546 566 55 09
+  email: melih.kocaturk@icloud.com
+
+# Plugins
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-feed

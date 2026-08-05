@@ -1,0 +1,287 @@
+/* HERO */
+.page-hero {
+  background-color: var(--light-bg);
+  padding: 90px 0;
+}
+
+.page-hero h1 {
+  font-size: clamp(2.8rem, 5vw, 4.5rem);
+  color: var(--primary-color);
+  margin-bottom: 25px;
+}
+
+.page-hero-text {
+  color: var(--muted-text);
+  font-size: 1.1rem;
+  max-width: 650px;
+  margin-bottom: 35px;
+}
+
+.hero-image {
+  width: 100%;
+  height: 560px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+/* INTRO */
+.intro-section {
+  background-color: #fff;
+}
+
+.intro-box {
+  max-width: 850px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.intro-box p {
+  font-size: 1.15rem;
+  color: var(--muted-text);
+}
+
+/* PROCESS */
+.process-section {
+  background-color: var(--light-bg);
+}
+
+.process-card {
+  height: 100%;
+  background-color: #fff;
+  padding: 40px 35px;
+  border-radius: 6px;
+  position: relative;
+  border: 1px solid var(--border-color);
+}
+
+.process-number {
+  font-family: "Playfair Display", serif;
+  font-size: 4rem;
+  line-height: 1;
+  color: var(--accent-light);
+  margin-bottom: 20px;
+}
+
+.process-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+  color: var(--primary-color);
+}
+
+.process-card p {
+  color: var(--muted-text);
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+/* DIFFERENCE */
+.difference-section {
+  background-color: #fff;
+}
+
+.difference-image {
+  width: 100%;
+  height: 620px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.difference-item {
+  display: flex;
+  gap: 20px;
+  padding: 25px 0;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.difference-item:last-child {
+  border-bottom: 0;
+}
+
+.difference-icon {
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--light-bg);
+  color: var(--primary-color);
+  border-radius: 50%;
+  font-size: 20px;
+}
+
+.difference-item h3 {
+  font-family: "DM Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 7px;
+}
+
+.difference-item p {
+  color: var(--muted-text);
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+/* SELLER PROCESS */
+.seller-section {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.seller-section .section-label {
+  color: var(--accent-light);
+}
+
+.seller-section .section-title {
+  color: #fff;
+}
+
+.seller-section .section-description {
+  color: rgba(255, 255, 255, .7);
+}
+
+.seller-step {
+  display: grid;
+  grid-template-columns: 60px 1fr;
+  gap: 25px;
+  padding: 30px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, .15);
+}
+
+.seller-step:last-child {
+  border-bottom: 0;
+}
+
+.seller-step-number {
+  width: 50px;
+  height: 50px;
+  border: 1px solid var(--accent-light);
+  color: var(--accent-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-family: "Playfair Display", serif;
+  font-size: 1.2rem;
+}
+
+.seller-step h3 {
+  font-family: "DM Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.seller-step p {
+  color: rgba(255, 255, 255, .65);
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+/* BUYER SECTION */
+.buyer-section {
+  background-color: #fff;
+}
+
+.buyer-card {
+  height: 100%;
+  padding: 40px 35px;
+  background-color: var(--light-bg);
+  border-radius: 6px;
+}
+
+.buyer-icon {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primary-color);
+  color: #fff;
+  border-radius: 50%;
+  font-size: 23px;
+  margin-bottom: 25px;
+}
+
+.buyer-card h3 {
+  font-size: 1.35rem;
+  margin-bottom: 15px;
+}
+
+.buyer-card p {
+  color: var(--muted-text);
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+/* TRANSPARENCY */
+.transparency-section {
+  background-color: var(--light-bg);
+}
+
+.transparency-box {
+  max-width: 850px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.transparency-box h2 {
+  color: var(--primary-color);
+}
+
+.transparency-box p {
+  color: var(--muted-text);
+  font-size: 1.05rem;
+}
+
+/* CTA */
+.cta-section {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.cta-section h2 {
+  font-size: clamp(2rem, 4vw, 3.5rem);
+}
+
+.cta-section p {
+  color: rgba(255, 255, 255, .7);
+  max-width: 650px;
+  margin: 20px auto 35px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 991.98px) {
+  .page-hero {
+    padding: 70px 0;
+  }
+
+  .hero-image {
+    height: 500px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .section-padding {
+    padding: 60px 0;
+  }
+
+  .page-hero {
+    padding: 55px 0;
+  }
+
+  .hero-image {
+    height: 420px;
+  }
+
+  .difference-image {
+    height: 400px;
+    margin-bottom: 35px;
+  }
+
+  .seller-step {
+    grid-template-columns: 50px 1fr;
+    gap: 20px;
+  }
+}

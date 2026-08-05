@@ -1,0 +1,542 @@
+---
+layout: page
+title: Gizlilik Politikası
+permalink: /gizlilik-politikasi
+---
+
+<style>
+  /* PAGE HEADER */
+  .page-header {
+    padding: 75px 0 65px;
+    background-color: var(--light-bg);
+    border-bottom: 1px solid var(--border-color);
+  }
+
+  .breadcrumb {
+    font-size: 13px;
+    margin-bottom: 30px;
+  }
+
+  .breadcrumb a {
+    color: var(--muted-text);
+  }
+
+  .breadcrumb a:hover {
+    color: var(--accent-color);
+  }
+
+  .breadcrumb-item.active {
+    color: var(--primary-color);
+  }
+
+  .page-label {
+    display: inline-block;
+    color: var(--accent-color);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+  }
+
+  .page-title {
+    color: var(--primary-color);
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    margin-bottom: 20px;
+  }
+
+  .page-description {
+    max-width: 700px;
+    color: var(--muted-text);
+    font-size: 1.05rem;
+    margin-bottom: 0;
+  }
+
+  /* CONTENT AREA */
+  .legal-section {
+    padding: 80px 0 100px;
+  }
+
+  /* SIDEBAR */
+  .legal-sidebar {
+    position: sticky;
+    top: 110px;
+  }
+
+  .sidebar-title {
+    font-size: 1.15rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+  }
+
+  .sidebar-nav {
+    border-left: 1px solid var(--border-color);
+  }
+
+  .sidebar-nav a {
+    display: block;
+    padding: 9px 20px;
+    color: var(--muted-text);
+    font-size: 14px;
+    border-left: 2px solid transparent;
+    margin-left: -1px;
+    transition: color 0.2s ease, background-color 0.2s ease, border-color 0.2s ease;
+  }
+
+  .sidebar-nav a:hover {
+    color: var(--primary-color);
+    background-color: rgba(196, 154, 90, 0.05);
+    border-left-color: var(--accent-light);
+  }
+
+  .sidebar-nav a.active {
+    color: var(--primary-color);
+    font-weight: 700;
+    background-color: rgba(196, 154, 90, 0.08);
+    border-left-color: var(--accent-color);
+  }
+
+  /* CONTENT */
+  .legal-content {
+    max-width: 850px;
+  }
+
+  .legal-content h2 {
+    color: var(--primary-color);
+    font-size: 2rem;
+    margin-top: 55px;
+    margin-bottom: 20px;
+    scroll-margin-top: 110px;
+  }
+
+  .legal-content h2:first-child {
+    margin-top: 0;
+  }
+
+  .legal-content h3 {
+    color: var(--primary-color);
+    font-size: 1.45rem;
+    margin-top: 35px;
+    margin-bottom: 15px;
+  }
+
+  .legal-content p {
+    color: #454e4b;
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  .legal-content ul,
+  .legal-content ol {
+    padding-left: 25px;
+    margin-bottom: 25px;
+  }
+
+  .legal-content li {
+    color: #454e4b;
+    margin-bottom: 8px;
+  }
+
+  .legal-content a {
+    color: var(--primary-color);
+    font-weight: 600;
+    text-decoration: underline;
+    text-decoration-color: var(--accent-light);
+    text-underline-offset: 3px;
+  }
+
+  .legal-content a:hover {
+    color: var(--accent-color);
+  }
+
+  /* INFO BOX */
+  .info-box {
+    padding: 25px 30px;
+    margin: 30px 0;
+    background-color: var(--light-bg);
+    border-left: 4px solid var(--accent-color);
+    border-radius: 0 6px 6px 0;
+  }
+
+  .info-box p {
+    margin-bottom: 0;
+  }
+
+  .info-box strong {
+    color: var(--primary-color);
+  }
+
+  /* IMPORTANT BOX */
+  .important-box {
+    padding: 25px 30px;
+    margin: 30px 0;
+    background-color: #fdfaf4;
+    border: 1px solid var(--accent-light);
+    border-radius: 6px;
+  }
+
+  .important-box-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--primary-color);
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+
+  .important-box-title i {
+    color: var(--accent-color);
+  }
+
+  .important-box p {
+    margin-bottom: 0;
+  }
+
+  /* TABLE */
+  .legal-table-wrapper {
+    overflow-x: auto;
+    margin: 30px 0;
+  }
+
+  .legal-table {
+    width: 100%;
+    min-width: 600px;
+    border-collapse: collapse;
+  }
+
+  .legal-table th {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 14px 16px;
+    text-align: left;
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  .legal-table td {
+    padding: 14px 16px;
+    border-bottom: 1px solid var(--border-color);
+    color: #454e4b;
+    font-size: 14px;
+    vertical-align: top;
+  }
+
+  .legal-table tr:last-child td {
+    border-bottom: none;
+  }
+
+  /* LAST UPDATED */
+  .last-updated {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 50px;
+    padding-top: 25px;
+    border-top: 1px solid var(--border-color);
+    color: var(--muted-text);
+    font-size: 13px;
+  }
+
+  .last-updated i {
+    color: var(--accent-color);
+  }
+
+  /* CTA */
+  .legal-cta {
+    margin-top: 70px;
+    padding: 45px;
+    background-color: var(--primary-color);
+    border-radius: 8px;
+  }
+
+  .legal-cta h3 {
+    color: #fff;
+    font-size: 1.8rem;
+    margin-bottom: 12px;
+  }
+
+  .legal-cta p {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 15px;
+    margin-bottom: 25px;
+  }
+
+  .btn-light-custom {
+    background-color: #fff;
+    color: var(--primary-color);
+    padding: 12px 24px;
+    border-radius: 5px;
+    font-weight: 700;
+  }
+
+  .btn-light-custom:hover {
+    background-color: var(--accent-light);
+    color: var(--primary-color);
+  }
+
+  /* RESPONSIVE */
+  @media (max-width: 991.98px) {
+    .legal-sidebar {
+      position: static;
+      margin-bottom: 50px;
+    }
+  }
+
+  @media (max-width: 767.98px) {
+    .page-header {
+      padding: 55px 0 45px;
+    }
+
+    .legal-section {
+      padding: 60px 0 70px;
+    }
+
+    .legal-content h2 {
+      font-size: 1.7rem;
+    }
+
+    .legal-content h3 {
+      font-size: 1.3rem;
+    }
+
+    .legal-cta {
+      padding: 35px 25px;
+    }
+  }
+</style>
+
+<!-- PAGE HEADER -->
+<header class="page-header">
+  <div class="container">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+          <a href="/"> Ana Sayfa </a>
+        </li>
+        <li class="breadcrumb-item active" aria-current="page">Gizlilik Politikası</li>
+      </ol>
+    </nav>
+    <span class="page-label"> Yasal Bilgilendirme </span>
+    <h1 class="page-title">Gizlilik Politikası</h1>
+    <p class="page-description">
+      Bu sayfa, web sitemizi ziyaret ettiğinizde bilgilerinizin nasıl işlendiği, korunduğu ve kullanıldığı hakkında
+      bilgi vermektedir.
+    </p>
+  </div>
+</header>
+
+<!-- MAIN CONTENT -->
+<main class="legal-section">
+  <div class="container">
+    <div class="row g-5">
+      <!-- SIDEBAR -->
+      <div class="col-lg-3">
+        <aside class="legal-sidebar">
+          <h3 class="sidebar-title">Bu Sayfada</h3>
+          <nav class="sidebar-nav" id="legalSidebarNav">
+            <a href="#genel"> Genel Bilgiler </a>
+            <a href="#toplanan-veriler"> Toplanan Bilgiler </a>
+            <a href="#kullanim-amaci"> Bilgilerin Kullanım Amacı </a>
+            <a href="#cerezler"> Çerezler </a>
+            <a href="#ucuncu-taraf"> Üçüncü Taraf Hizmetleri </a>
+            <a href="#veri-guvenligi"> Veri Güvenliği </a>
+            <a href="#haklar"> Haklarınız </a>
+            <a href="#iletisim"> İletişim </a>
+          </nav>
+        </aside>
+      </div>
+      <!-- CONTENT -->
+      <div class="col-lg-9">
+        <article class="legal-content">
+          <!-- 1. GENEL BİLGİLER -->
+          <h2 id="genel">1. Genel Bilgiler</h2>
+          <p>
+            Bu Gizlilik Politikası, Melih Kocatürk tarafından işletilen web sitesini ziyaret eden kullanıcıların kişisel
+            verilerinin gizliliğine ilişkin esasları açıklamak amacıyla hazırlanmıştır.
+          </p>
+          <p>
+            Web sitemizi ziyaret ederek veya sunduğumuz hizmetlerden yararlanarak bu politikada belirtilen uygulamaları
+            kabul etmiş olursunuz.
+          </p>
+          <div class="info-box">
+            <p>
+              <strong>Önemli:</strong>
+              Kişisel verilerinizin işlenmesi ve korunmasıyla ilgili detaylı bilgiler için ayrıca
+              <a href="/kvkk-aydinlatma-metni"> KVKK Aydınlatma Metni </a>
+              sayfasını inceleyebilirsiniz.
+            </p>
+          </div>
+          <!-- 2. TOPLANAN BİLGİLER -->
+          <h2 id="toplanan-veriler">2. Toplanan Bilgiler</h2>
+          <p>
+            Web sitemizi ziyaret ettiğinizde teknik nedenlerle veya hizmetlerin sunulması amacıyla belirli bilgiler
+            işlenebilir.
+          </p>
+          <ul>
+            <li>IP adresi</li>
+            <li>Tarayıcı ve cihaz bilgileri</li>
+            <li>Ziyaret edilen sayfalar</li>
+            <li>Ziyaret tarihi ve süresi</li>
+            <li>Trafik ve kullanım verileri</li>
+          </ul>
+          <!-- 3. KULLANIM AMACI -->
+          <h2 id="kullanim-amaci">3. Bilgilerin Kullanım Amacı</h2>
+          <p>
+            Toplanan bilgiler; web sitesinin güvenli ve doğru şekilde çalışmasını sağlamak, kullanıcı deneyimini
+            geliştirmek, ziyaretçi davranışlarını analiz etmek ve hizmetlerimizi geliştirmek amacıyla kullanılabilir.
+          </p>
+          <!-- 4. ÇEREZLER -->
+          <h2 id="cerezler">4. Çerezler</h2>
+          <p>
+            Web sitemizde kullanıcı deneyimini geliştirmek ve web sitesi trafiğini analiz etmek amacıyla çerezler ve
+            benzeri teknolojiler kullanılabilir.
+          </p>
+          <!-- 5. ÜÇÜNCÜ TARAF -->
+          <h2 id="ucuncu-taraf">5. Üçüncü Taraf Hizmetleri</h2>
+          <p>Web sitemizde Google Analytics ve Google AdSense gibi üçüncü taraf hizmetleri kullanılabilir.</p>
+          <p>
+            Bu hizmetler, web sitesi kullanımını analiz etmek veya kullanıcıya ilgi alanlarına dayalı reklamlar sunmak
+            amacıyla çeşitli teknolojiler kullanabilir.
+          </p>
+          <div class="important-box">
+            <div class="important-box-title">
+              <i class="bi bi-info-circle"></i>
+              Üçüncü Taraf Hizmetleri Hakkında
+            </div>
+            <p>
+              Üçüncü taraf hizmet sağlayıcılarının kendi gizlilik politikaları ve veri işleme uygulamaları
+              bulunmaktadır. Kullanıcıların ilgili hizmet sağlayıcıların politikalarını da incelemesi önerilir.
+            </p>
+          </div>
+          <!-- 6. VERİ GÜVENLİĞİ -->
+          <h2 id="veri-guvenligi">6. Veri Güvenliği</h2>
+          <p>
+            Kişisel verilerin yetkisiz erişim, kayıp, kötüye kullanım veya hukuka aykırı şekilde işlenmesine karşı uygun
+            teknik ve idari tedbirler alınmaktadır.
+          </p>
+          <!-- 7. HAKLAR -->
+          <h2 id="haklar">7. Haklarınız</h2>
+          <p>
+            Yürürlükteki mevzuat kapsamında kişisel verilerinizle ilgili çeşitli haklara sahip olabilirsiniz. Bu
+            hakların kapsamı ve kullanılması hakkında detaylı bilgi için KVKK Aydınlatma Metni'ni inceleyebilirsiniz.
+          </p>
+          <!-- 8. İLETİŞİM -->
+          <h2 id="iletisim">8. İletişim</h2>
+          <p>
+            Gizlilik politikası veya kişisel verilerinizin işlenmesiyle ilgili sorularınız için aşağıdaki iletişim
+            kanallarından bizimle iletişime geçebilirsiniz.
+          </p>
+          <p>
+            E-posta:
+            <a href="mailto:{{ site.contact.email }}"> {{ site.contact.email }} </a>
+          </p>
+          <!-- LAST UPDATED -->
+          <div class="last-updated">
+            <i class="bi bi-calendar3"></i>
+            Son güncelleme: 30 Temmuz 2026
+          </div>
+          <!-- CTA -->
+          <div class="legal-cta">
+            <h3>Sorularınız mı Var?</h3>
+            <p>
+              Web sitemiz veya sunduğumuz gayrimenkul danışmanlığı hizmetleri hakkında bilgi almak için bizimle
+              iletişime geçebilirsiniz.
+            </p>
+            <a href="/ucretsiz-gorusme/" class="btn btn-light-custom">
+              İletişime Geçin
+              <i class="bi bi-arrow-right ms-2"></i>
+            </a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</main>
+
+<!--
+  =====================================================
+       SIDEBAR SCROLL SPY
+       Bootstrap ScrollSpy kullanılmıyor.
+       IntersectionObserver ile aktif bölüm takip ediliyor.
+  =====================================================
+-->
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const sections = document.querySelectorAll('.legal-content h2[id]');
+    const navLinks = document.querySelectorAll('#legalSidebarNav a');
+    if (!sections.length || !navLinks.length) {
+      return;
+    }
+    /*
+      -----------------------------------------
+      Menü bağlantısına aktif sınıf ekleme
+      -----------------------------------------
+      */
+    function setActiveLink(id) {
+      navLinks.forEach(function (link) {
+        link.classList.remove('active');
+      });
+      const activeLink = document.querySelector('#legalSidebarNav a[href="#' + id + '"]');
+      if (activeLink) {
+        activeLink.classList.add('active');
+      }
+    }
+    /*
+      -----------------------------------------
+      IntersectionObserver
+      -----------------------------------------
+      */
+    const observer = new IntersectionObserver(
+      function (entries) {
+        const visibleSections = entries.filter(function (entry) {
+          return entry.isIntersecting;
+        });
+        if (!visibleSections.length) {
+          return;
+        }
+        /*
+          Birden fazla bölüm görünür durumdaysa
+          sayfanın üst kısmına en yakın olanı
+          aktif hale getir.
+          */
+        visibleSections.sort(function (a, b) {
+          return a.boundingClientRect.top - b.boundingClientRect.top;
+        });
+        setActiveLink(visibleSections[0].target.id);
+      },
+      {
+        /*
+          Sticky navbar yüksekliği
+          */
+        rootMargin: '-120px 0px -60% 0px',
+        threshold: 0,
+      }
+    );
+    /*
+      -----------------------------------------
+      Bölümleri gözlemlemeye başla
+      -----------------------------------------
+      */
+    sections.forEach(function (section) {
+      observer.observe(section);
+    });
+    /*
+      -----------------------------------------
+      Menüye tıklanınca aktif durumu
+      anında güncelle
+      -----------------------------------------
+      */
+    navLinks.forEach(function (link) {
+      link.addEventListener('click', function () {
+        const targetId = this.getAttribute('href').replace('#', '');
+        setActiveLink(targetId);
+      });
+    });
+    /*
+      -----------------------------------------
+      Sayfa ilk açıldığında ilk bölümü aktif yap
+      -----------------------------------------
+      */
+    setActiveLink(sections[0].id);
+  });
+</script>

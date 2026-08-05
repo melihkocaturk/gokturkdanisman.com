@@ -1,0 +1,106 @@
+---
+layout: default
+title: Etiketler
+permalink: /etiketler
+custom_css: tags
+---
+
+<!-- PAGE HEADER -->
+<header class="page-header">
+  <div class="container">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+          <a href="/"> Ana Sayfa </a>
+        </li>
+        <li class="breadcrumb-item">
+          <a href="#"> Blog </a>
+        </li>
+        <li class="breadcrumb-item active" aria-current="page">Etiketler</li>
+      </ol>
+    </nav>
+    <span class="page-label"> İçerik Dizini </span>
+    <h1 class="page-title">Konularına Göre Etiketler</h1>
+    <p class="page-description">
+      Gayrimenkul, ekonomi, mevzuat ve yatırım dünyasına dair kaleme aldığım tüm içerikleri etiketlere göre keşfedin.
+    </p>
+  </div>
+</header>
+
+<!-- TAG CLOUD -->
+<section class="tag-cloud-section">
+  <div class="container">
+    <div class="tag-cloud">
+      {% for tag in site.tags %}
+        <a href="#{{ tag[0] }}" class="tag-cloud-link">
+          #{{ tag[0] }}
+          <span class="count">{{ tag[1].size }}</span>
+        </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- CONTENT -->
+<main class="tags-content">
+  <div class="container">
+    <div class="row g-5">
+      <!-- MAIN CONTENT -->
+      <div class="col-lg-8">
+        {% for tag in site.tags %}
+          <!-- TAG -->
+          <section class="tag-section" id="{{ tag[0] }}">
+            <div class="tag-section-header">
+              <h2 class="tag-title">
+                {{ tag[0] }}
+              </h2>
+              <span class="tag-count">{{- tag[1].size }} Yazı </span>
+            </div>
+            <ul class="post-list">
+              {% for post in tag[1] %}
+                <li class="post-item">
+                  <a href="{{ post.url }}" class="post-link">
+                    <span class="post-title">
+                      {{ post.title }}
+                    </span>
+                    <!-- <span class="post-date"> {{ post.date | date: '%d/%m/%Y' -}}</span> -->
+                    <i class="bi bi-arrow-right post-arrow"></i>
+                  </a>
+                </li>
+              {% endfor %}
+            </ul>
+          </section>
+        {% endfor %}
+
+        <!-- CTA -->
+        <section class="blog-cta">
+          <h3>Gayrimenkul Kararınızı Birlikte Değerlendirelim</h3>
+          <p>Gayrimenkul satışı, kiralama veya yatırım konusunda aklınızdaki soruları birlikte değerlendirebiliriz.</p>
+          <a href="/ucretsiz-gorusme" class="btn btn-light-custom">
+            Ücretsiz Görüşme Talep Et
+            <i class="bi bi-arrow-right ms-2"></i>
+          </a>
+        </section>
+      </div>
+
+      <!-- SIDEBAR -->
+      <div class="col-lg-4">
+        <aside class="tags-sidebar">
+          <div class="sidebar-box">
+            <div class="sidebar-title">Tüm Etiketler</div>
+            <ul class="sidebar-list">
+              {% for tag in site.tags %}
+                <li>
+                  <a href="#{{ tag[0] }}">
+                    <span> #{{ tag[0] }} </span>
+                    <span class="count"> {{ tag[1].size }} </span>
+                  </a>
+                </li>
+              {% endfor %}
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </div>
+</main>

@@ -1,0 +1,105 @@
+---
+layout: default
+---
+
+{% assign words = content | strip_html | number_of_words %}
+
+<!-- ARTICLE HEADER -->
+<header class="article-header">
+  <div class="container">
+    <div class="text-center">
+      <!-- Breadcrumb -->
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb justify-content-center">
+          <li class="breadcrumb-item">
+            <a href="/"> Ana Sayfa </a>
+          </li>
+          <li class="breadcrumb-item active" aria-current="page">
+            <a href="#"> Blog </a>
+          </li>
+        </ol>
+      </nav>
+      <!-- Category -->
+      <div class="article-category">{{ page.category }}</div>
+      <!-- Title -->
+      <h1 class="article-title">{{ page.title | escape }}</h1>
+      <!-- Excerpt -->
+      <p class="article-excerpt">
+        {{ page.excerpt }}
+      </p>
+      <!-- Meta -->
+      <div class="article-meta">
+        <span>
+          <i class="bi bi-calendar3"></i>
+          {{ page.date | date: '%d/%m/%Y' }}
+        </span>
+        <span>
+          <i class="bi bi-clock"></i>
+          {{ words | divided_by: site.words_per_minute }} dk okuma
+        </span>
+        <span>
+          <i class="bi bi-person"></i>
+          {{ site.name }}
+        </span>
+      </div>
+    </div>
+    <!-- Feature Image -->
+    <div class="article-image-wrapper">
+      <img
+        src="{{ page.image }}"
+        alt="{{ page.title }}"
+        class="article-feature-image"
+      >
+    </div>
+  </div>
+</header>
+
+<!-- ARTICLE CONTENT -->
+<main class="article-section">
+  <div class="container">
+    <article class="article-content">
+      {{ content }}
+      <!-- AUTHOR -->
+      <div class="author-box">
+        <img src="/images/melih-kocaturk-kw.jpg" alt="{{ site.name }}" class="author-image">
+        <div>
+          <h4>{{ site.name }}</h4>
+          <p>
+            Göktürk ve çevresinde gayrimenkul satış, kiralama ve yatırım süreçleri üzerine çalışan gayrimenkul
+            danışmanı.
+          </p>
+        </div>
+      </div>
+      <!-- SHARE -->
+      <div class="share-area">
+        <span class="share-label"> Bu yazıyı paylaş </span>
+        <div class="share-buttons">
+          <a href="https://twitter.com/intent/tweet?url={{ page.url }}" target="_blank" class="share-button"
+            ><i class="bi bi-twitter-x"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/sharing/share-offsite/?url={{ page.url }}"
+            target="_blank"
+            class="share-button"
+            ><i class="bi bi-linkedin"></i
+          ></a>
+          <a href="https://api.whatsapp.com/send?text={{ page.url }}" target="_blank" class="share-button"
+            ><i class="bi bi-whatsapp"></i
+          ></a>
+        </div>
+      </div>
+      <!-- LEAD CTA -->
+      <div class="article-cta">
+        <h2>Gayrimenkulünüzle İlgili Bir Karar mı Veriyorsunuz?</h2>
+        <p>
+          Satmayı, kiraya vermeyi veya Göktürk'te gayrimenkul satın almayı düşünüyorsanız, mevcut durumunuzu ve
+          hedeflerinizi birlikte değerlendirebiliriz.
+        </p>
+        <a href="/ucretsiz-gorusme" class="btn btn-light-custom">
+          Ücretsiz Görüşme Talep Et
+          <i class="bi bi-arrow-right ms-2"></i>
+        </a>
+      </div>
+    </article>
+  </div>
+</main>

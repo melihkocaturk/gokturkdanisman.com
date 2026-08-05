@@ -1,0 +1,34 @@
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg sticky-top">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      {{ site.name }}
+      <small>{{ site.title }}</small>
+    </a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#mainNavbar"
+      aria-controls="mainNavbar"
+      aria-expanded="false"
+      aria-label="Menüyü Aç"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mainNavbar">
+      <ul class="navbar-nav ms-auto align-items-lg-center">
+        {% for item in site.data.nav %}
+          <li class="nav-item">
+            <a class="nav-link {% if page.url == item.link %}active{% endif %}" href="{{ item.link }}">
+              {{- item.name -}}
+            </a>
+          </li>
+        {% endfor %}
+        <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
+          <a class="btn btn-primary-custom" href="/ucretsiz-gorusme"> Ücretsiz Görüşme </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

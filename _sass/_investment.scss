@@ -1,0 +1,273 @@
+/* HERO */
+.page-hero {
+  background-color: var(--light-bg);
+  padding: 90px 0;
+}
+
+.page-hero h1 {
+  font-size: clamp(2.8rem, 5vw, 4.5rem);
+  color: var(--primary-color);
+  margin-bottom: 25px;
+}
+
+.page-hero-text {
+  color: var(--muted-text);
+  font-size: 1.1rem;
+  max-width: 650px;
+  margin-bottom: 35px;
+}
+
+.hero-image {
+  width: 100%;
+  height: 560px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+/* INVESTMENT TYPES */
+.investment-types {
+  background-color: #fff;
+}
+
+.investment-card {
+  height: 100%;
+  padding: 40px 35px;
+  background-color: var(--light-bg);
+  border-radius: 6px;
+  transition: transform 0.25s ease;
+}
+
+.investment-card:hover {
+  transform: translateY(-5px);
+}
+
+.investment-icon {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primary-color);
+  color: #fff;
+  border-radius: 50%;
+  font-size: 23px;
+  margin-bottom: 25px;
+}
+
+.investment-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+}
+
+.investment-card p {
+  color: var(--muted-text);
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+/* DECISION SECTION */
+.decision-section {
+  background-color: var(--light-bg);
+}
+
+.decision-image {
+  width: 100%;
+  height: 620px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.decision-item {
+  padding: 28px 0;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.decision-item:last-child {
+  border-bottom: 0;
+}
+
+.decision-item h3 {
+  font-size: 1.35rem;
+  margin-bottom: 10px;
+}
+
+.decision-item p {
+  color: var(--muted-text);
+  margin-bottom: 0;
+}
+
+/* FORM */
+.investment-form-section {
+  background-color: #fff;
+}
+
+.form-box {
+  background-color: var(--light-bg);
+  padding: 60px;
+  border-radius: 6px;
+}
+
+.form-label {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.form-control,
+.form-select {
+  padding: 13px 15px;
+  border-color: var(--border-color);
+  border-radius: 5px;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: var(--accent-color);
+  box-shadow: 0 0 0 0.2rem rgba(196, 154, 90, 0.15);
+}
+
+.form-check-input:checked {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+/* PRINCIPLES */
+.principles-section {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.principles-section .section-label {
+  color: var(--accent-light);
+}
+
+.principles-section .section-title {
+  color: #fff;
+}
+
+.principles-section .section-description {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.principle-item {
+  display: flex;
+  gap: 20px;
+  padding: 25px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.principle-item:last-child {
+  border-bottom: 0;
+}
+
+.principle-icon {
+  flex-shrink: 0;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--accent-light);
+  color: var(--accent-light);
+  border-radius: 50%;
+}
+
+.principle-item h3 {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.principle-item p {
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 14px;
+  margin: 0;
+}
+
+/* FAQ */
+.faq-section {
+  background-color: #fff;
+}
+
+.accordion-item {
+  border: 1px solid var(--border-color);
+  margin-bottom: 10px;
+  border-radius: 5px !important;
+  overflow: hidden;
+}
+
+.accordion-button {
+  font-weight: 600;
+  color: var(--dark-text);
+  background-color: #fff;
+  padding: 20px;
+}
+
+.accordion-button:not(.collapsed) {
+  color: var(--primary-color);
+  background-color: #fff;
+  box-shadow: none;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+.accordion-body {
+  color: var(--muted-text);
+  font-size: 15px;
+}
+
+/* CTA */
+.cta-section {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.cta-section h2 {
+  font-size: clamp(2rem, 4vw, 3.5rem);
+}
+
+.cta-section p {
+  color: rgba(255, 255, 255, 0.7);
+  max-width: 650px;
+  margin: 20px auto 35px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 991.98px) {
+  .page-hero {
+    padding: 70px 0;
+  }
+
+  .hero-image {
+    height: 500px;
+  }
+
+  .form-box {
+    padding: 40px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .section-padding {
+    padding: 60px 0;
+  }
+
+  .page-hero {
+    padding: 55px 0;
+  }
+
+  .hero-image {
+    height: 420px;
+  }
+
+  .decision-image {
+    height: 400px;
+    margin-bottom: 35px;
+  }
+
+  .form-box {
+    padding: 30px 20px;
+  }
+}
