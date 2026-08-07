@@ -434,7 +434,7 @@ custom_css: contact-us
     form.addEventListener('submit', function (e) {
       e.preventDefault();
 
-      const whatsappNumber = '905XXXXXXXXX'; // Kendi numaranızı yazın.
+      const whatsappNumber = "{{ site.contact.gsm | remove: ' ' }}";
 
       const getValue = (id) => {
         const el = document.getElementById(id);
