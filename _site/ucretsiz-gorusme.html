@@ -538,37 +538,21 @@
         return;
       }
 
-      let message = `Merhaba Melih Bey,
+      let message = 
+      `Merhaba Melih Bey,
+      Web siteniz üzerinden ücretsiz görüşme talebinde bulunuyorum.
 
-        Web siteniz üzerinden ücretsiz görüşme talebinde bulunuyorum.
+      *GÖRÜŞME TALEBİ*
 
-        *GÖRÜŞME TALEBİ*
-
-        *Talep Konusu:* ${purpose.nextElementSibling.innerText.trim()}
-        *Ad Soyad:* ${getValue('name')}
-        *Telefon:* ${getValue('phone')}`;
-
-      if (getValue('email') !== '') {
-        message += `*E-posta:* ${getValue('email')}`;
-      }
-
-      if (getValue('property-type') !== 'Seçiniz') {
-        message += `*Gayrimenkul Tipi:* ${getValue('property-type')}`;
-      }
-
-      if (getValue('location') !== '') {
-        message += `*Bölge / Konum:* ${getValue('location')}`;
-      }
-
-      if (getValue('timing') !== 'Seçiniz') {
-        message += `*Zamanlama:* ${getValue('timing')}`;
-      }
-
-      message += `*İletişim Tercihi:* ${getValue('contact-preference')}`;
-
-      if (getValue('message') !== '') {
-        message += `*Ek Bilgi:* ${getValue('message')}`;
-      }
+      *Talep Konusu:* ${purpose.nextElementSibling.innerText.trim()}
+      *Ad Soyad:* ${getValue('name')}
+      *Telefon:* ${getValue('phone')}
+      *E-posta:* ${getValue('email')}
+      *Gayrimenkul Tipi:* ${getValue('property-type')}
+      *Bölge / Konum:* ${getValue('location')}
+      *Zamanlama:* ${getValue('timing')}
+      *İletişim Tercihi:* ${getValue('contact-preference')}
+      *Ek Bilgi:* ${getValue('message')}`;
 
       const url = 'https://wa.me/' + whatsappNumber + '?text=' + encodeURIComponent(message);
 
